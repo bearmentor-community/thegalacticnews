@@ -22,6 +22,12 @@ This project is inspired by:
 - [Hashnode](https://hashnode.com)
 - [Dev.to](https://dev.to)
 
+## Repositories
+
+- [`thegalacticnews`](https://github.com/azobu-projects/thegalacticnews)
+- [`thegalacticnews-web`](https://github.com/azobu-projects/thegalacticnews-web)
+- [`thegalacticnews-api`](https://github.com/azobu-projects/thegalacticnews-api)
+
 ## Designs
 
 - [Mockup](https://figma.com)
