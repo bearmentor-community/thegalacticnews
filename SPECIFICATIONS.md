@@ -1,31 +1,38 @@
 # Specifications
 
-## Pages
+## Web Pages
 
-| Name     | Path              | Description          |
-| -------- | ----------------- | -------------------- |
-| Home     | `/`               | Homepage             |
-| Articles | `/articles`       | List of all articles |
-| Article: | `/articles/:slug` | One article page     |
-| Users:   | `/users`          | List of all users    |
-| Authors  | `/authors`        | List of all authors  |
-| Register | `/register`       | Register as new user |
-| Login    | `/login`          | Login to user        |
-| Logout   | `/logout`         | Logout from user     |
+| Path                 | Component  | Description          |
+| -------------------- | ---------- | -------------------- |
+| `/`                  | `Home`     | Homepage             |
+| `/404`               | `NotFound` | Page not found       |
+| `/register`          | `Register` | Register as new user |
+| `/login`             | `Login`    | Login to user        |
+| `/logout`            | `Logout`   | Logout from user     |
+| `/users`             | `Users`    | List of all users    |
+| `/users/:username`   | `User`     | User profile         |
+| `/authors`           | `Authors`  | List of all authors  |
+| `/authors/:username` | `Author`   | Author profile       |
+| `/settings`          | `Settings` | Settings for user    |
+| `/articles`          | `Articles` | List of all articles |
+| `/:slug`             | `Article`  | Single article       |
 
-## Endpoints
+## API Endpoints
 
-| Endpoint         | Method | Description       | Query       |
-| ---------------- | ------ | ----------------- | ----------- |
-| `/`              | `GET`  | Get index         | -           |
-| `/articles`      | `GET`  | Get all articles  | `paginated` |
-| `/users`         | `GET`  | Get all users     | `paginated` |
-| `/auth/register` | `POST` | Register new user | -           |
-| `/auth/login`    | `POST` | Login to user     | -           |
-| `/auth/logout`   | `GET`  | Logout from user  | -           |
+| Endpoint          | Method | Description             | Query       | Headers         |
+| ----------------- | ------ | ----------------------- | ----------- | --------------- |
+| `/`               | `GET`  | Get index               | -           | -               |
+| `/auth/register`  | `POST` | Register new user       | -           | -               |
+| `/auth/login`     | `POST` | Login to user           | -           | -               |
+| `/auth/logout`    | `GET`  | Logout from user        | -           | `Authorization` |
+| `/auth/settings`  | `POST` | Get user settings       | -           | `Authorization` |
+| `/users`          | `GET`  | Get all users           | `paginated` | -               |
+| `/articles`       | `GET`  | Get all articles        | `paginated` | -               |
+| `/articles/:slug` | `GET`  | Get one article by slug | -           | -               |
 
 Inspirations:
 
+- [The New York Times Developer Network](https://developer.nytimes.com)
 - [News API](https://newsapi.org)
 
 ## Data
