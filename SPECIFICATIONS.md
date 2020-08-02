@@ -35,7 +35,59 @@ Inspirations:
 - [The New York Times Developer Network](https://developer.nytimes.com)
 - [News API](https://newsapi.org)
 
-## Data
+## Data Structure
+
+### Users
+
+```json
+{
+  "id": 0,
+  "_id": "abc",
+  "createdAt": "",
+  "updatedAt": "",
+  "avatarUrl": "https://api.thegalacticnews.azobu.com/images/mhaidarhanif_123.jpg",
+  "name": "M Haidar Hanif",
+  "username": "mhaidarhanif",
+  "email": "haidar@example.com",
+  "roles": ["user", "author"],
+  "settings": {
+    "theme": "dark"
+  },
+  "bio": {
+    "short": "Educator, Engineer, Explorer. Write everything education and tech.",
+    "long": "Haidar is a seasoned tech educator and engineer in the world of software engineering and web development. Currently he focuses on helping people to start and grow their career in the modern software industry."
+  },
+  "links": [
+    {
+      "title": "Website",
+      "url": "https://mhaidarhanif.com"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com"
+    }
+  ],
+  "articles": ["abc", "def", "ghi"]
+}
+```
+
+### Articles
+
+```json
+{
+  "id": 0,
+  "_id": "abc",
+  "createdAt": "",
+  "updatedAt": "",
+  "publishedAt": "",
+  "title": "SpaceX crew docks with the International Space Station",
+  "description": "Two veteran NASA astronauts have joined the crew aboard the orbiting lab, marking the first human flight to space from U.S. soil since 2011.",
+  "slug": "spacex-crew-docks-with-the-iss",
+  "body": "<p>After a nearly 19-hour cruise, SpaceX’s Crew Dragon spacecraft arrived at the International Space Station and successfully docked with the orbiting laboratory. Piloted by NASA astronauts Bob Behnken and Doug Hurley, <a href='https://www.nationalgeographic.com/science/2020/05/spacex-nasa-launch-human-astronauts-crew-dragon-international-space-station-demo-2'>Dragon is the first vessel to carry humans into space from U.S. shores since 2011.</a></p><p>Named Endeavour by its crew, the spacecraft docked to the ISS at 10:16 a.m. ET as the station passed over the border between China and Mongolia. The astronauts will work to equalize the pressure and temperature between Dragon and the ISS before Behnken and Hurley make their way into the station, where they will stay for between one and four months.</p>",
+  "tags": ["spacex", "iss", "nasa"],
+  "author": "abc"
+}
+```
 
 ## Designs
 
