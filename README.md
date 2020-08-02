@@ -2,6 +2,10 @@
 
 > News site that covers intergalactic matters from humans and aliens.
 
+| Light                                           | Dark                                          |
+| ----------------------------------------------- | --------------------------------------------- |
+| ![Preview Home Light](./mockups/home-light.jpg) | ![Preview Home Dark](./mockups/home-dark.jpg) |
+
 ## Repositories
 
 - [`thegalacticnews`](https://github.com/azobu-projects/thegalacticnews)
@@ -34,7 +38,10 @@ This project is inspired by:
 - [Hashnode](https://hashnode.com)
 - [Dev.to](https://dev.to)
 
-The noticable difference is that in The Galactic News, only authorized or allowed users can be authors and post articles. So not every user able to become an author as they have to be verified first.
+The noticable differences in The Galactic News:
+
+- Only authorized or allowed users can be authors and post articles. So not every user able to become an author as they have to be verified first.
+- There is no comment section. Discussion can be done in other channels.
 
 ## Authors
 
